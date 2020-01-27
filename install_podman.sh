@@ -15,11 +15,9 @@ echo "[DEBUG] Distro is $VERSION"
 if [ $VERSION_ID == "18.04" -o $VERSION_ID == "19.04" -o $VERSION_ID == "19.10" ]
 then
     echo "[DEBUG] Distro is compatible"
-    exit 0
 else
     echo "[DEBUG] Distro is NOT compatible!"
     echo "[DEBUG] Compatible distros are Ubuntu 18.04, Ubuntu 19.04 and Ubuntu 19.10"
-    exit 1
 fi
 
 echo "[DEBUG] Update APT sources list..."
